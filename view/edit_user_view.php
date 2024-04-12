@@ -24,12 +24,12 @@ if (!$user) {
         <input type="hidden" name="action" value="update">
         <input type="hidden" name="UserID" value="<?= $user['UserID'] ?>">
 
-        <!-- Repeat the form structure from manage_users_view.php, but with values filled in -->
+        
         <!-- Example for the name field -->
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required value="<?= htmlspecialchars($user['Name']) ?>">
 
-        <!-- Include other fields: Email, Phone, Role, and a Save button -->
+        
 
         <button type="submit">Save Changes</button>
     </form>

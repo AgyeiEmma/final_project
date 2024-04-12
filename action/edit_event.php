@@ -8,7 +8,7 @@ if(isset($_POST['editbtn'])){
     $eventvenue = $_POST['venue'];
     $eventid = $_POST['EventID'];
    
-    $sql = "UPDATE events SET EventName='$eventname', EventDate='$eventdate', Venue='$eventvenue' WHERE EventID='$eventid'";
+    $sql = "UPDATE Events SET EventName='$eventname', EventDate='$eventdate', Venue='$eventvenue' WHERE EventID='$eventid'";
     $result = mysqli_query($conn, $sql);
 
     if($result === true){

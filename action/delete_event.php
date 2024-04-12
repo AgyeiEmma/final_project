@@ -5,7 +5,7 @@ require_once '../setting/connection.php';
 if(isset($_GET['EventID'])){
     $eventid = $_GET['EventID'];
 
-   $sql = "DELETE FROM events WHERE EventID='$eventid'";
+   $sql = "DELETE FROM Events WHERE EventID='$eventid'";
    $result = mysqli_query($conn, $sql);
 
    if($result === true){

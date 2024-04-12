@@ -11,7 +11,7 @@ $data = json_decode($json);
 if ($data) {
    
     // Insert into database (ensure you handle errors and check for existing users)
-    $sql = "INSERT INTO users (Name, Email, Phone, Password) VALUES (?, ?, ?, ?)";
+    $sql = "INSERT INTO Users (Name, Email, Phone, Password) VALUES (?, ?, ?, ?)";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("ssss", $name, $email, $phone, $password);
 

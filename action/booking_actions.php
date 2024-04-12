@@ -9,7 +9,7 @@ if (isset($_POST['bookbtn'])) {
     $userid = $_POST['userid'];
     $date = date("Y-m-d");
 
-    $sql = "INSERT INTO bookings (EventID, Seat, Price, BookingDate, UserID) VALUES ('$eventid', '$seat', '$price', '$date','$userid')";
+    $sql = "INSERT INTO Bookings (EventID, Seat, Price, BookingDate, UserID) VALUES ('$eventid', '$seat', '$price', '$date','$userid')";
     $result = mysqli_query($conn, $sql);
 
     if ($result){
@@ -33,9 +33,9 @@ if (isset($_POST['bookbtn'])) {
 }
 
 //Fetching actions
-$sql = "SELECT bookings.BookingID,  events.EventName, events.Venue, users.Name, bookings.Price FROM bookings
-        JOIN users ON bookings.UserID = users.UserID
-        JOIN events ON bookings.EventId = events.EventID";
+$sql = "SELECT Bookings.BookingID,  Events.EventName, Events.Venue, Users.Name, Bookings.Price FROM Bookings
+        JOIN Users ON Bookings.UserID = Users.UserID
+        JOIN Events ON Bookings.EventId = Events.EventID";
 
 $result = mysqli_query($conn, $sql);
 $resu = mysqli_fetch_all($result);

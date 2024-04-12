@@ -54,26 +54,12 @@ if(!isset($_SESSION['email'])){
                     <p>Create, update, or remove events, manage venues, and view bookings.</p>
                     <a href="./manage_events_view.php" class="btn">Manage Events</a>
                 </div>
-                <!-- <div class="dashboard-card">
-                    <h2>User Management</h2>
-                    <p>Manage user accounts, including roles and access levels.</p>
-                    <a href="manage_users_view.php" class="btn">Manage Users</a>
-                </div> -->
+                
                 <div class="dashboard-card">
                     <h2>Bookings Management</h2>
                     <p>View, modify, or cancel bookings.</p>
                     <a href="manage_bookings_view.php" class="btn">Manage Bookings</a>
                 </div>
-                <!-- <div class="dashboard-card">
-                    <h2>Venues and Seating</h2>
-                    <p>Define venues, seating arrangements, and categories.</p>
-                    <a href="manage_venues_view.php" class="btn">Manage Venues</a>
-                </div> -->
-                <!-- <div class="dashboard-card">
-                    <h2>Access Codes</h2>
-                    <p>Generate, distribute, and manage access pins or codes for events.</p>
-                    <a href="generate_codes_view.php" class="btn">Generate Codes</a>
-                </div> -->
             </div>
         </section>
     </main>

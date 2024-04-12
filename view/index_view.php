@@ -51,7 +51,7 @@ session_start();
     </div>
     
     <section class="featured-events">
-        <!-- Featured Events content -->
+        
     </section>
     
     <footer>

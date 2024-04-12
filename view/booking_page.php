@@ -7,7 +7,7 @@
     $price = $_GET['Price'];
     $seat = $_GET['Seat'];
     //Fetch one event
-    $sql = "SELECT * FROM events WHERE EventID = '$id'";
+    $sql = "SELECT * FROM Events WHERE EventID = '$id'";
     $result = mysqli_query($conn, $sql);
     $res = mysqli_fetch_assoc($result);
    

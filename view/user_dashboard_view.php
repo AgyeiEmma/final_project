@@ -3,10 +3,6 @@ require('../action/user_dashboard_action.php');
 
 $userid = $_SESSION['UserID'];
 
-// $sql = "SELECT * FROM bookings WHERE UserID = '$userid'";
-// $result = mysqli_query($conn, $sql);
-// $resu = mysqli_fetch_assoc($result);
-
 //Fetch Bookings Details
 $sql = "SELECT users.Name, events.EventName, events.Venue, bookings.Seat, bookings.Price FROM bookings
         JOIN users ON bookings.UserID = '$userid'

@@ -6,7 +6,7 @@ if (isset($_POST['btn'])) {
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    $sql = "SELECT * FROM admin WHERE Email = '$email' ";
+    $sql = "SELECT * FROM Admin WHERE Email = '$email' ";
     $result = mysqli_query($conn, $sql);
     $res = mysqli_fetch_assoc($result);
    

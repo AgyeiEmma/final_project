@@ -14,7 +14,7 @@ if ($action == 'create') {
 
     // Insert query to add user to database
     $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
-    $stmt = $pdo->prepare("INSERT INTO users (Name, Email, Phone, Role, Password) VALUES (?, ?, ?, ?, ?)");
+    $stmt = $pdo->prepare("INSERT INTO Users (Name, Email, Phone, Role, Password) VALUES (?, ?, ?, ?, ?)");
     $stmt->execute([$name, $email, $phone, $role, $hashedPassword]);
 
     // Redirect or show a success message

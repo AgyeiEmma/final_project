@@ -38,19 +38,7 @@ session_start();
         <h1>What We Do</h1>
         <p>EventSeatBooker is designed to connect event-goers with a variety of events, <br> providing an easy and secure way to book seats. <br> From concerts and sports events to conferences, we offer a seamless booking experience.</p>
     
-    <!-- <section class="hero">
-        <h1>About EventSeatBooker</h1>
-        <p>Your ultimate platform for discovering and booking seats for events around you.</p>
-    </section> -->
-
-
-    <!-- <section class="about">
-        <div class="content">
-            <h2></h2>
-            <p>EventSeatBooker is designed to connect event-goers with a variety of events, providing an easy and secure way to book seats. From concerts and sports events to conferences, we offer a seamless booking experience.</p>
-        </div>
-    </section> -->
- <class="featured-events">
+    <class="featured-events">
         <h2>Successful Bookings</h2>
         <div class="events-grid">
             <div class="event">
