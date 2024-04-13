@@ -1,6 +1,5 @@
 <?php
 require_once('../action/user_dashboard_action.php');
-// require '../setting/connection.php';
 $userid = $_SESSION['UserID'];
 
 // //Fetch Bookings Details
