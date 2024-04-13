@@ -38,6 +38,7 @@ session_start();
     </header>
 
 <main>
+<section class="hero">
     <h1>Manage Events</h1>
     <section>
         <br />
@@ -93,6 +94,7 @@ session_start();
     </table>
 </section>
     </section>
+                </section>
 </main>
 <footer>
 <p>&copy; 2024 EventSeatBooker. All rights reserved.</p>

@@ -41,10 +41,7 @@ session_start();
     <class="featured-events">
         <h2>Successful Bookings</h2>
         <div class="events-grid">
-            <div class="event">
-                <img src="../images/burna.png" alt="Event 1">
-                <h3>BurnaBoy at o2 arena 2022</h3>
-            </div>
+        
             <div class="event">
                 <img src="../images/wwe.png" alt="Event 2">
                 <h3>WWE Superstar 2023</h3>

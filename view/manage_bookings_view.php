@@ -25,6 +25,7 @@
 </header>
 
 <main>
+<section class="hero">
     <h1>Bookings Management</h1>
     <table>
         <thead>
@@ -50,12 +51,13 @@
                              <a href=''>Edit</a> | 
                              <a href='' onclick="return confirm('Are you sure?')">Cancel</a>
                          </td>
-                       </tr>";
+                       </tr>
             <?php
               }
             ?>
         </tbody>
     </table>
+            </section>
 </main>
 
 <footer>
