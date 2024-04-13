@@ -10,13 +10,6 @@ if (!isset($_SESSION['UserID'])) {
 }
 
 $user_id = $_SESSION['UserID'];
-
-
-
-
-
-
-
 $sql="SELECT Name, Email, Phone FROM Users WHERE UserID = $user_id";
 $result = $conn->query($sql);
 $user = $result->fetch_assoc();
