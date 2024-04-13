@@ -1,9 +1,9 @@
 <?php
-require('../action/user_dashboard_action.php');
-
+require_once('../action/user_dashboard_action.php');
+// require '../setting/connection.php';
 $userid = $_SESSION['UserID'];
 
-//Fetch Bookings Details
+// //Fetch Bookings Details
 $sql = "SELECT Users.Name, Events.EventName, Events.Venue, Bookings.Seat, Bookings.Price FROM Bookings
         JOIN Users ON Bookings.UserID = '$userid'
         JOIN Events ON Bookings.EventId = Events.EventID";

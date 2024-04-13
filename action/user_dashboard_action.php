@@ -11,14 +11,13 @@ if (!isset($_SESSION['UserID'])) {
 
 $user_id = $_SESSION['UserID'];
 
-// Fetch user information
-$userQuery = $conn->prepare("SELECT Name, Email, Phone FROM Users WHERE UserID = ?");
-$userQuery->bind_param("i", $user_id);
-$userQuery->execute();
-$result = $userQuery->get_result();
-$user = $result->fetch_assoc();
 
-$userQuery->close();
-// $bookingQuery->close();
-$pinQuery->close();
+
+
+
+
+
+$sql="SELECT Name, Email, Phone FROM Users WHERE UserID = $user_id";
+$result = $conn->query($sql);
+$user = $result->fetch_assoc();
 ?>
