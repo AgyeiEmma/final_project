@@ -44,8 +44,9 @@ $resu = mysqli_fetch_assoc($result);
             </ul>
         </nav>
     </header>
-    
+    <section class="hero">
     <section class="user-profile">
+    
         <h2>My Profile</h2>
         <form id="profileForm">
             <label for="name">Name:</label>
@@ -85,6 +86,7 @@ $resu = mysqli_fetch_assoc($result);
         <?php
           }
           ?>
+    </section>
     </section>
     
     <footer>
