@@ -4,9 +4,9 @@ require('../action/user_dashboard_action.php');
 $userid = $_SESSION['UserID'];
 
 //Fetch Bookings Details
-$sql = "SELECT users.Name, events.EventName, events.Venue, bookings.Seat, bookings.Price FROM bookings
-        JOIN users ON bookings.UserID = '$userid'
-        JOIN events ON bookings.EventId = events.EventID";
+$sql = "SELECT Users.Name, Events.EventName, Events.Venue, Bookings.Seat, Bookings.Price FROM Bookings
+        JOIN Users ON Bookings.UserID = '$userid'
+        JOIN Events ON Bookings.EventId = Events.EventID";
 
 $result = mysqli_query($conn, $sql);
 $resu = mysqli_fetch_assoc($result);
